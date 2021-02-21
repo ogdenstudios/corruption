@@ -1,6 +1,7 @@
 <template>
   <div :class="position % 2 === 0 ? 'dark' : 'light'">
-    {{ fileLetter + rank }}
+    <h1>{{ fileLetter + rank }}</h1>
+    <div>Tower level: {{towerLevel}}</div>
   </div>
 </template>
 
@@ -24,10 +25,13 @@ export default {
   },
   computed: {
     fileLetter: function () {
-      const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+      const letters = ["A", "B", "C", "D", "E", "F", "G"];
       return letters[this.file];
-    }
-  }
+    },
+    towerLevel: function () {
+      return this.$store.state.board[this.rank][this.file].towerLevel;
+    },
+  },
 };
 </script>
 
