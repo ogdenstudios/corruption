@@ -1,5 +1,11 @@
 # corrupt
 
+User interface is a function of state.
+
+21:57 - that's the first part
+
+[Vuex](https://vuex.vuejs.org/)
+
 ## Project setup
 ```
 yarn install
