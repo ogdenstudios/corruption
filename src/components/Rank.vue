@@ -5,6 +5,8 @@
       :key="index"
       :data-something="tile"
       :position="offset % 2 === 0 ? index : index + 1"
+      :rank="rank"
+      :file="index"
     />
   </div>
 </template>
@@ -21,6 +23,11 @@ export default {
     offset: {
       type: Number,
     },
+    rank: {
+      type: Number,
+      required: true,
+      default: null
+    }
   },
   data() {
     return {
