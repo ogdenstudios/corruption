@@ -5,6 +5,7 @@
       :key="index"
       :data-something="rank"
       :offset="index"
+      :rank="index"
     />
   </div>
 </template>
