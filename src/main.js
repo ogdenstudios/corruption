@@ -8,7 +8,7 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
     board: [
-      [{ towerLevel: 3 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }],
+      [{ towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }],
       [{ towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }],
       [{ towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }],
       [{ towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }, { towerLevel: 0 }],

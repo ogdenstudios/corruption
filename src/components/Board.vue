@@ -7,20 +7,29 @@
       :offset="index"
       :rank="index"
     />
+    <Pieces
+      v-for="(piece, i) in pieces"
+      :key="i"
+      :data-something="piece"
+      :piece="i"  
+    />
   </div>
 </template>
 
 <script>
 import Rank from "./Rank";
+import Pieces from './Pieces';
 
 export default {
   name: "Board",
   components: {
     Rank,
+    Pieces,
   },
   data() {
     return {
       ranks: new Array(7).fill({ placeholder: "placeholder" }),
+      pieces: new Array(4).fill({ placeholder: "placeholder" }),
     };
   },
 };
