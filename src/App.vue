@@ -1,13 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <p>Play with count function in `./components/HelloWorld.vue`</p>
   <HelloWorld />
+  <Board />
 </template>
 
-<script setup>
+<script>
 import HelloWorld from './components/HelloWorld.vue'
+import Board from './components/Board.vue'
 
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
+export default {
+  name: 'App',
+  components: {
+    HelloWorld,
+    Board,
+
+  }
+}
+
+// Refractor to <script setup> once comfortable with traditional syntax
+// https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
 </script>
 
 <style>
@@ -19,4 +30,5 @@ import HelloWorld from './components/HelloWorld.vue'
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
