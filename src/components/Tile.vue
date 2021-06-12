@@ -3,7 +3,7 @@
     :class="position % 2 === 0 ? 'dark' : 'light'"
     class="tile-size"
     >
-        <h1>{{ fileLetter + rankNumber }}</h1>
+        <p>{{fileLetter + rankNumber}}</p>
     </div>
 </template>
 
@@ -26,8 +26,13 @@ export default {
         },
     },
     computed: {
+        fileLetter: function() {
+            const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+            return letters[this.file]
+        },
         rankNumber: function() {
-            const reverse = [7, 6, 5, 4, 3, 2, 1];
+            const numbers = [1, 2, 3, 4, 5, 6, 7];
+            const reverse = numbers.reverse();
             return reverse[this.rank]
         }
     }
