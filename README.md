@@ -14,4 +14,3 @@ Run `npm install`
 - Serve `npm run serve`
 - Build & Serve `npm run dev`
 
-Serves to `localhost:3030`
