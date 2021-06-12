@@ -2,7 +2,7 @@
 
 Corrupt is a two-player abstract strategy game developed for tabletop by [Kenny Miller](https://github.com/knnymllr).
 
-Built with [Vite](https://vitejs.dev/), [Vue](https://vuejs.org/), and [Vuex](https://vuex.vuejs.org/)
+Built with [Vite](https://vitejs.dev/), [Vue](https://v3.vuejs.org/), and [Vuex](https://vuex.vuejs.org/)
 
 ## Install
 
